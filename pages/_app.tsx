@@ -1,7 +1,7 @@
 import { withTRPC } from '@trpc/next';
 import type { AppProps } from 'next/app';
 import { AppRouter } from './api/trpc/[trpc]';
-
+import '../styles/globals.css'
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
 }
@@ -43,3 +43,4 @@ export default withTRPC<AppRouter>({
    */
   ssr: true,
 })(MyApp);
+
