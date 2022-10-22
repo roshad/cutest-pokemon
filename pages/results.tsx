@@ -13,7 +13,7 @@ import Image from "next/image";
 //   )
 // }
 type Pokemon = { id: number, win: number, lose: number, total: number, image: string, name: string }
-export default function results(props: { pokemons: [Pokemon] }) {
+export default function Results(props: { pokemons: [Pokemon] }) {
 
   //console.log("props", props.pokemons);
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
