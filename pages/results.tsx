@@ -24,7 +24,7 @@ export default function Results(props: { pokemons: [Pokemon] }) {
     // generate two random numbers between 1 and 905
 
 
-    const pokemons = await Promise.all(props.pokemons?.sort((a, b) => b.win / b.total - a.win / a.total).slice(0, 20)?.map(async (pokemon) => {
+    const pokemons = await Promise.all(props.pokemons?.sort((a, b) => b.win / b.total - a.win / a.total).slice(0, 20)?.sort((a,b)=>b.win-a.win).map(async (pokemon) => {
 
       const poke = await (
         await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.id}`)
