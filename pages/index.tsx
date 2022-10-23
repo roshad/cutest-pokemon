@@ -119,6 +119,9 @@ const Home: NextPage = (props) => {
                     <Link href="/results">
                         <a className="relative neu p-4 bottom-8 rounded-lg">Results</a>
                     </Link>
+                    <Link href="/results1">
+                        <a className="relative neu p-4 bottom-8 rounded-lg">Results</a>
+                    </Link>
                 </div>)}
         </div>
     );
